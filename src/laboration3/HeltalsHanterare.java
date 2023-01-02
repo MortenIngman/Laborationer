@@ -1,4 +1,4 @@
-package laboration1.laboration3;
+package laboration3;
 
 import java.util.ArrayList;
 import java.util.Scanner;

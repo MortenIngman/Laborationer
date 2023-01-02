@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="075b2828-5885-4318-991f-9042d88a5793" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laborationer.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/laboration1/KnopTillKmh.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/laboration1/laboration3/HeltalsHanterare.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/laboration2/CharCounter.java" afterDir="false" />
-    </list>
+    <list default="true" id="075b2828-5885-4318-991f-9042d88a5793" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,11 +58,11 @@
       </method>
     </configuration>
     <configuration name="HeltalsHanterare" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="laboration1.laboration3.HeltalsHanterare" />
+      <option name="MAIN_CLASS_NAME" value="laboration3.HeltalsHanterare" />
       <module name="Laborationer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="laboration1.laboration3.*" />
+          <option name="PATTERN" value="laboration3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -117,7 +104,7 @@
       <workItem from="1672484178392" duration="948000" />
       <workItem from="1672591588143" duration="3710000" />
       <workItem from="1672663553180" duration="301000" />
-      <workItem from="1672685771207" duration="4182000" />
+      <workItem from="1672685771207" duration="4483000" />
     </task>
     <servers />
   </component>

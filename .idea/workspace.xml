@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="075b2828-5885-4318-991f-9042d88a5793" name="Changes" comment="lab 3 klar">
-      <change afterPath="$PROJECT_DIR$/src/laboration3/Heltalshantering.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/laboration1/laboration3/HeltalsHanterare.java" beforeDir="false" />
+    <list default="true" id="075b2828-5885-4318-991f-9042d88a5793" name="Changes" comment="refaktorisering">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/laboration3/Heltalshantering.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/laboration3/Heltalshantering.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +130,7 @@
       <workItem from="1672591588143" duration="3710000" />
       <workItem from="1672663553180" duration="301000" />
       <workItem from="1672685771207" duration="4735000" />
-      <workItem from="1672747319399" duration="6769000" />
+      <workItem from="1672747319399" duration="8332000" />
     </task>
     <task id="LOCAL−00001" summary="wip">
       <created>1672690480773</created>
@@ -144,7 +144,13 @@
       <option name="presentableId" value="LOCAL−00002" />
       <updated>1672754370944</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL−00003" summary="refaktorisering">
+      <created>1672754571135</created>
+      <option name="number" value="LOCAL−00003" />
+      <option name="presentableId" value="LOCAL−00003" />
+      <updated>1672754571135</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,6 +170,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="wip" />
     <MESSAGE value="lab 3 klar" />
-    <option name="LAST_COMMIT_MESSAGE" value="lab 3 klar" />
+    <MESSAGE value="refaktorisering" />
+    <option name="LAST_COMMIT_MESSAGE" value="refaktorisering" />
   </component>
 </project>

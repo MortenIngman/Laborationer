@@ -2,11 +2,13 @@ package laboration2;
 
 import java.util.Scanner;
 
-/* Programmet tar inmatning från användaren i form av en mening och ett
-*  tecken, sen räknar det ut det totala antalet tecken i meningen
-*  samt det totala antalet förekomster av angivet tecken i meningen.
-*  Programmet skriver också ut på vilken plats i meningen det angivna
-*  tecknet förekommer första och sista gången */
+/**
+ * Programmet tar inmatning från användaren i form av en mening och ett
+ * tecken, sen räknar det ut det totala antalet tecken i meningen
+ * samt det totala antalet förekomster av angivet tecken i meningen.
+ * Programmet skriver också ut på vilken plats i meningen det angivna
+ * tecknet förekommer första och sista gången
+ */
 
 public class CharCounter {
     public static void main(String[] args) {
@@ -40,7 +42,7 @@ public class CharCounter {
             if (tecken.charAt(0) == mening.charAt(j)) {
                 antalForekomster++;
             }
-            forstaForekomst = mening.indexOf(tecken, 0);
+            forstaForekomst = mening.indexOf(tecken);
             sistaForekomst = mening.lastIndexOf(tecken);
         }
 

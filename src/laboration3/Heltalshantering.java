@@ -19,7 +19,7 @@ public class Heltalshantering {
 
             int antalHeltal;
             int medelVarde;
-            int frekvens;
+            int antalForekomster;
 
             ArrayList<Integer> heltalsArray = new ArrayList<>();
             ArrayList<Integer> dublettArray = new ArrayList<>();
@@ -27,11 +27,11 @@ public class Heltalshantering {
 
             antalHeltal = antalHeltal(input);
             skapaHeltalsArray(input, antalHeltal, heltalsArray);
-            frekvens = beraknaForekomster(heltalsArray, dublettArray, singelArray);
+            antalForekomster = beraknaForekomster(heltalsArray, dublettArray, singelArray);
             medelVarde = beraknaMedelvarde(heltalsArray);
 
             System.out.println("Du angav " + antalHeltal + " tal.");
-            System.out.println("Varav " + frekvens + " bara angavs en gång.");
+            System.out.println("Varav " + antalForekomster + " bara angavs en gång.");
             System.out.println("Medelvärdet för talen är: " + medelVarde);
 
             input.close();
@@ -47,7 +47,7 @@ public class Heltalshantering {
     private static int antalHeltal(Scanner input) {
             int antalHeltal;
             while(true) {
-                System.out.println("Hur många heltal vill du ange? ");
+                System.out.print("Hur många heltal vill du ange? ");
                 String heltal = input.nextLine();
                 try {
                     antalHeltal = Integer.parseInt(heltal);
@@ -72,7 +72,7 @@ public class Heltalshantering {
         private static void skapaHeltalsArray(Scanner input, int antalHeltal, ArrayList<Integer> heltalsArray) {
             for(int i = 1; i <= antalHeltal; i++) {
                 while(true) {
-                    System.out.println("Ange heltal " + i);
+                    System.out.print("Ange heltal " + i + ": ");
                     String heltal = input.nextLine();
                     try {
                         heltalsArray.add(Integer.parseInt(heltal));

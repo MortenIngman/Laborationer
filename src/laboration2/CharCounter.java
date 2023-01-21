@@ -3,6 +3,7 @@ package laboration2;
 import java.util.Scanner;
 
 /**
+ * @author Morten Ingman
  * Programmet tar inmatning från användaren i form av en mening och ett
  * tecken, sen räknar det ut det totala antalet tecken i meningen
  * samt det totala antalet förekomster av angivet tecken i meningen.
@@ -22,7 +23,7 @@ public class CharCounter {
         Scanner input = new Scanner(System.in);
 
         while(mening.length() < 1) {
-            System.out.println("Skriv in en mening: ");
+            System.out.print("Skriv in en mening: ");
             mening = input.nextLine();
         }
 
@@ -33,7 +34,7 @@ public class CharCounter {
         }
 
         while(tecken.length() != 1) {
-            System.out.println("Skriv in ett tecken: ");
+            System.out.print("Skriv in ett tecken: ");
             tecken = input.nextLine();
         }
 

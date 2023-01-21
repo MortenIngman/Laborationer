@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="075b2828-5885-4318-991f-9042d88a5793" name="Changes" comment="wip">
+      <change afterPath="$PROJECT_DIR$/src/laboration5/Foo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/laboration1/KnopTillKmh.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/laboration1/KnopTillKmh.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/laboration2/CharCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/laboration2/CharCounter.java" afterDir="false" />
@@ -53,7 +54,7 @@
       <recent name="D:\Workspace\Laborationer\src\rockpaperscissors" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.KnopTillKmh">
+  <component name="RunManager" selected="Application.Heltalshantering">
     <configuration name="CharCounter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="laboration2.CharCounter" />
       <module name="Laborationer" />
@@ -115,11 +116,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.KnopTillKmh" />
+        <item itemvalue="Application.Heltalshantering" />
         <item itemvalue="Application.CharCounter" />
+        <item itemvalue="Application.KnopTillKmh" />
         <item itemvalue="Application.rockpaperscissors.RockPaperScissorsMain" />
         <item itemvalue="Application.RockPaperScissorsMain" />
-        <item itemvalue="Application.Heltalshantering" />
       </list>
     </recent_temporary>
   </component>
@@ -139,6 +140,17 @@
       <workItem from="1672685771207" duration="4735000" />
       <workItem from="1672747319399" duration="9359000" />
       <workItem from="1672844883396" duration="4812000" />
+      <workItem from="1673006549080" duration="113000" />
+      <workItem from="1673086098081" duration="911000" />
+      <workItem from="1673175594362" duration="1303000" />
+      <workItem from="1673272557424" duration="1453000" />
+      <workItem from="1673339283691" duration="735000" />
+      <workItem from="1673375014589" duration="681000" />
+      <workItem from="1673417149138" duration="613000" />
+      <workItem from="1673419483754" duration="3329000" />
+      <workItem from="1673790861412" duration="1211000" />
+      <workItem from="1673886967479" duration="1206000" />
+      <workItem from="1674296776100" duration="935000" />
     </task>
     <task id="LOCAL−00001" summary="wip">
       <created>1672690480773</created>
@@ -170,7 +182,13 @@
       <option name="presentableId" value="LOCAL−00005" />
       <updated>1672756964587</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL−00006" summary="wip">
+      <created>1673006622726</created>
+      <option name="number" value="LOCAL−00006" />
+      <option name="presentableId" value="LOCAL−00006" />
+      <updated>1673006622726</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,7 +199,13 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>

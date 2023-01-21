@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="075b2828-5885-4318-991f-9042d88a5793" name="Changes" comment="wip">
-      <change afterPath="$PROJECT_DIR$/src/laboration5/Foo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/laboration1/KnopTillKmh.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/laboration1/KnopTillKmh.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/laboration2/CharCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/laboration2/CharCounter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/laboration3/Heltalshantering.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/laboration3/Heltalshantering.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rockpaperscissors/RockPaperScissorsLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rockpaperscissors/RockPaperScissorsLogic.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +53,7 @@
       <recent name="D:\Workspace\Laborationer\src\rockpaperscissors" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Heltalshantering">
+  <component name="RunManager" selected="Application.rockpaperscissors.RockPaperScissorsMain">
     <configuration name="CharCounter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="laboration2.CharCounter" />
       <module name="Laborationer" />
@@ -116,11 +115,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Heltalshantering" />
-        <item itemvalue="Application.CharCounter" />
-        <item itemvalue="Application.KnopTillKmh" />
         <item itemvalue="Application.rockpaperscissors.RockPaperScissorsMain" />
         <item itemvalue="Application.RockPaperScissorsMain" />
+        <item itemvalue="Application.KnopTillKmh" />
+        <item itemvalue="Application.Heltalshantering" />
+        <item itemvalue="Application.CharCounter" />
       </list>
     </recent_temporary>
   </component>
@@ -150,7 +149,7 @@
       <workItem from="1673419483754" duration="3329000" />
       <workItem from="1673790861412" duration="1211000" />
       <workItem from="1673886967479" duration="1206000" />
-      <workItem from="1674296776100" duration="935000" />
+      <workItem from="1674296776100" duration="6643000" />
     </task>
     <task id="LOCAL−00001" summary="wip">
       <created>1672690480773</created>
@@ -188,7 +187,13 @@
       <option name="presentableId" value="LOCAL−00006" />
       <updated>1673006622726</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL−00007" summary="wip">
+      <created>1674297838700</created>
+      <option name="number" value="LOCAL−00007" />
+      <option name="presentableId" value="LOCAL−00007" />
+      <updated>1674297838700</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

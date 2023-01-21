@@ -14,12 +14,21 @@ public class RockPaperScissorsLogic {
     int getComputerChoice() {
         return new Random().nextInt(2);
     }
+//    /**
+//     * Determine game winner.
+//     *
+//     * @param userChoice users choice (0 - 3)
+//     * @param computerChoice computers choice (0 - 3)
+//     * @return 1 for draw, -1 if user won, and 0 if computer won
+//     */
     /**
-     * Determine game winner.
+     * Determine game winner
      *
-     * @param userChoice users choice (0 - 3)
-     * @param computerChoice computers choice (0 - 3)
-     * @return 1 for draw, -1 if user won, and 0 if computer won
+     * @param userChoice users choice (0 - 2) where 0 represents
+     * rock, 1 represents scissors, and 2 represents paper.
+     * @param computerChoice computer choice (0 - 2) where 0 represents
+     * rock, 1 represents scissors, and 2 represents paper.
+     * @return
      */
     int determineRoundWinner(int userChoice, int computerChoice) {
         int winner;
@@ -47,6 +56,21 @@ public class RockPaperScissorsLogic {
     int determineGameWinner(int userScore, int computerScore) {
         //default, no one won
         int winner = -1;
+
+        //user won
+        if(userScore == 3) {
+            winner = 0;
+        }
+        //computer won
+        else if(computerScore == 3) {
+            winner = 1;
+        }
+        return winner;
+
+        /*
+        Felaktiga villkor i if-satsen på befintliga koden,
+        jag har djort nödvändiga ändringar ovan.
+
         //user won
         if(userScore == 2) {
             winner = 0;
@@ -56,5 +80,6 @@ public class RockPaperScissorsLogic {
             winner = 1;
         }
         return winner;
+         */
     }
 }

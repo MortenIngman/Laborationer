@@ -22,7 +22,7 @@ public class CharCounter {
 
         Scanner input = new Scanner(System.in);
 
-        while(mening.length() < 1) {
+        while (mening.length() < 1) {
             System.out.print("Skriv in en mening: ");
             mening = input.nextLine();
         }
@@ -33,7 +33,7 @@ public class CharCounter {
                 antalTecken++;
         }
 
-        while(tecken.length() != 1) {
+        while (tecken.length() != 1) {
             System.out.print("Skriv in ett tecken: ");
             tecken = input.nextLine();
         }

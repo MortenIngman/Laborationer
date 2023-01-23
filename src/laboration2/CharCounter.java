@@ -13,43 +13,43 @@ import java.util.Scanner;
 
 public class CharCounter {
     public static void main(String[] args) {
-        int antalTecken = 0;
-        int antalForekomster = 0;
-        int forstaForekomst = 0;
-        int sistaForekomst = 0;
-        String mening = "";
-        String tecken = "";
+        int numberOfCharacters = 0;
+        int occurrences = 0;
+        int firstOccurrence = 0;
+        int lastOccurrence = 0;
+        String sentence = "";
+        String character = "";
 
         Scanner input = new Scanner(System.in);
 
-        while (mening.length() < 1) {
+        while (sentence.length() < 1) {
             System.out.print("Skriv in en mening: ");
-            mening = input.nextLine();
+            sentence = input.nextLine();
         }
 
-        for (int i = 0; i < mening.length(); i++) {
-            mening = mening.toLowerCase();
-            if (mening.charAt(i) != ' ')
-                antalTecken++;
+        for (int i = 0; i < sentence.length(); i++) {
+            sentence = sentence.toLowerCase();
+            if (sentence.charAt(i) != ' ')
+                numberOfCharacters++;
         }
 
-        while (tecken.length() != 1) {
+        while (character.length() != 1) {
             System.out.print("Skriv in ett tecken: ");
-            tecken = input.nextLine();
+            character = input.nextLine();
         }
 
-        for (int j = 0; j < mening.length(); j++) {
-            tecken = tecken.toLowerCase();
-            if (tecken.charAt(0) == mening.charAt(j)) {
-                antalForekomster++;
+        for (int j = 0; j < sentence.length(); j++) {
+            character = character.toLowerCase();
+            if (character.charAt(0) == sentence.charAt(j)) {
+                occurrences++;
             }
-            forstaForekomst = mening.indexOf(tecken);
-            sistaForekomst = mening.lastIndexOf(tecken);
+            firstOccurrence = sentence.indexOf(character);
+            lastOccurrence = sentence.lastIndexOf(character);
         }
 
-        System.out.println("Meningen har totalt " + antalTecken + " tecken.");
-        System.out.println("Tecknet " + tecken + " förekommer " + antalForekomster + " gånger.");
-        System.out.println("Första gången på indexplats " + forstaForekomst);
-        System.out.println("Sista gången på indexplats " + sistaForekomst);
+        System.out.println("Meningen har totalt " + numberOfCharacters + " tecken.");
+        System.out.println("Tecknet " + character + " förekommer " + occurrences + " gånger.");
+        System.out.println("Första gången på indexplats " + firstOccurrence);
+        System.out.println("Sista gången på indexplats " + lastOccurrence);
     }
 }

@@ -17,22 +17,22 @@ public class Heltalshantering {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        int antalHeltal;
-        int medelVarde;
-        int antalForekomster;
+        int numberOfIntegers;
+        int avarageValue;
+        int occurrences;
 
-        ArrayList<Integer> heltalsArray = new ArrayList<>();
-        ArrayList<Integer> dublettArray = new ArrayList<>();
-        ArrayList<Integer> singelArray = new ArrayList<>();
+        ArrayList<Integer> arrayOfIntegers = new ArrayList<>();
+        ArrayList<Integer> arrayOfDuplicates = new ArrayList<>();
+        ArrayList<Integer> arrayOfSingles = new ArrayList<>();
 
-        antalHeltal = antalHeltal(input);
-        skapaHeltalsArray(input, antalHeltal, heltalsArray);
-        antalForekomster = beraknaForekomster(heltalsArray, dublettArray, singelArray);
-        medelVarde = beraknaMedelvarde(heltalsArray);
+        numberOfIntegers = selectNumberOfIntegers(input);
+        createArrayOfIntegers(input, numberOfIntegers, arrayOfIntegers);
+        occurrences = calculateNumberOfOccurences(arrayOfIntegers, arrayOfDuplicates, arrayOfSingles);
+        avarageValue = calculateAvarageValue(arrayOfIntegers);
 
-        System.out.println("Du angav " + antalHeltal + " tal.");
-        System.out.println("Varav " + antalForekomster + " bara angavs en gång.");
-        System.out.println("Medelvärdet för talen är: " + medelVarde);
+        System.out.println("Du angav " + numberOfIntegers + " tal.");
+        System.out.println("Varav " + occurrences + " bara angavs en gång.");
+        System.out.println("Medelvärdet för talen är: " + avarageValue);
 
         input.close();
     }
@@ -45,20 +45,20 @@ public class Heltalshantering {
      * @param input i form av ett heltal som användaren uppmanas ange.
      * @return metoden returnerar heltalet i datatypen integer
      */
-    private static int antalHeltal(Scanner input) {
-        int antalHeltal;
+    private static int selectNumberOfIntegers(Scanner input) {
+        int numberOfIntegers;
         while (true) {
             System.out.print("Hur många heltal vill du ange? ");
             String heltal = input.nextLine();
             try {
-                antalHeltal = Integer.parseInt(heltal);
-                System.out.println(antalHeltal);
+                numberOfIntegers = Integer.parseInt(heltal);
+                System.out.println(numberOfIntegers);
                 break;
             } catch (NumberFormatException e) {
                 System.out.println("Ogiltigt värde!");
             }
         }
-        return antalHeltal;
+        return numberOfIntegers;
     }
 
     /**
@@ -68,16 +68,16 @@ public class Heltalshantering {
      * mata in ett heltal.
      *
      * @param input        heltalen användaren matar in
-     * @param antalHeltal  antal heltal användaren kan mata in i arrayen
-     * @param heltalsArray arrayen som ska populeras i metoden.
+     * @param numberOfIntegers  antal heltal användaren kan mata in i arrayen
+     * @param arrayOfIntegers arrayen som ska populeras i metoden.
      */
-    private static void skapaHeltalsArray(Scanner input, int antalHeltal, ArrayList<Integer> heltalsArray) {
-        for (int i = 1; i <= antalHeltal; i++) {
+    private static void createArrayOfIntegers(Scanner input, int numberOfIntegers, ArrayList<Integer> arrayOfIntegers) {
+        for (int i = 1; i <= numberOfIntegers; i++) {
             while (true) {
                 System.out.print("Ange heltal " + i + ": ");
-                String heltal = input.nextLine();
+                String number = input.nextLine();
                 try {
-                    heltalsArray.add(Integer.parseInt(heltal));
+                    arrayOfIntegers.add(Integer.parseInt(number));
                     break;
                 } catch (NumberFormatException e) {
                     System.out.println("Ogiltigt värde!");
@@ -90,44 +90,44 @@ public class Heltalshantering {
      * Metoden beräknar hur många tal som bara förekommer
      * en gång i arrayen och returnerar det värdet.
      *
-     * @param heltalsArray arrayen med heltal som användaren angett
-     * @param dublettArray populeras med de tal som förkommer fler än en gång
-     * @param singelArray  populeras med de tal som bara förekommer en gång
+     * @param arrayOfIntegers arrayen med heltal som användaren angett
+     * @param arrayOfDuplicates populeras med de tal som förkommer fler än en gång
+     * @param arrayOfSingles  populeras med de tal som bara förekommer en gång
      * @return metoden returnerar antalet värden som bara förekommer en gång
      */
-    private static int beraknaForekomster(ArrayList<Integer> heltalsArray, ArrayList<Integer> dublettArray, ArrayList<Integer> singelArray) {
-        boolean arDublett;
-        for (int i = 0; i < heltalsArray.size(); i++) {
-            arDublett = false;
-            if (!dublettArray.contains(heltalsArray.get(i))) {
-                for (int j = i + 1; j < heltalsArray.size(); j++) {
-                    if (heltalsArray.get(i).equals(heltalsArray.get(j))) {
-                        arDublett = true;
+    private static int calculateNumberOfOccurences(ArrayList<Integer> arrayOfIntegers, ArrayList<Integer> arrayOfDuplicates, ArrayList<Integer> arrayOfSingles) {
+        boolean isDuplicate;
+        for (int i = 0; i < arrayOfIntegers.size(); i++) {
+            isDuplicate = false;
+            if (!arrayOfDuplicates.contains(arrayOfIntegers.get(i))) {
+                for (int j = i + 1; j < arrayOfIntegers.size(); j++) {
+                    if (arrayOfIntegers.get(i).equals(arrayOfIntegers.get(j))) {
+                        isDuplicate = true;
                         break;
                     }
                 }
-                if (!arDublett) {
-                    singelArray.add(heltalsArray.get(i));
+                if (!isDuplicate) {
+                    arrayOfSingles.add(arrayOfIntegers.get(i));
                 } else {
-                    dublettArray.add(heltalsArray.get(i));
+                    arrayOfDuplicates.add(arrayOfIntegers.get(i));
                 }
             }
         }
-        return singelArray.size();
+        return arrayOfSingles.size();
     }
 
     /**
      * Metoden beräknar medelvärdet av de tal som
      * användaren matat in i arrayen.
      *
-     * @param heltalsArray arrayen med heltal som användaren angett
+     * @param arrayOfIntegers arrayen med heltal som användaren angett
      * @return metoden returnerar medelvärdet på de tal som heltalsarrayen innehåller
      */
-    private static int beraknaMedelvarde(ArrayList<Integer> heltalsArray) {
+    private static int calculateAvarageValue(ArrayList<Integer> arrayOfIntegers) {
         int summa = 0;
-        for (Integer integer : heltalsArray) {
+        for (Integer integer : arrayOfIntegers) {
             summa += integer;
         }
-        return summa / heltalsArray.size();
+        return summa / arrayOfIntegers.size();
     }
 }

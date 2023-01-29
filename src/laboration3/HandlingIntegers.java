@@ -3,7 +3,7 @@ package laboration3;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Heltalshantering {
+public class HandlingIntegers {
 
     /**
      * @param args unused

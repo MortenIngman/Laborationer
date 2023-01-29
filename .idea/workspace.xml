@@ -7,7 +7,7 @@
     <list default="true" id="075b2828-5885-4318-991f-9042d88a5793" name="Changes" comment="wip">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/laboration2/CharCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/laboration2/CharCounter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/laboration3/Heltalshantering.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/laboration3/Heltalshantering.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/laboration3/Heltalshantering.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/laboration3/HandlingIntegers.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +52,7 @@
       <recent name="D:\Workspace\Laborationer\src\rockpaperscissors" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Heltalshantering">
+  <component name="RunManager" selected="Application.HandlingIntegers">
     <configuration name="CharCounter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="laboration2.CharCounter" />
       <module name="Laborationer" />
@@ -66,8 +66,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Heltalshantering" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="laboration3.Heltalshantering" />
+    <configuration name="HandlingIntegers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="laboration3.HandlingIntegers" />
       <module name="Laborationer" />
       <extension name="coverage">
         <pattern>
@@ -114,11 +114,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Heltalshantering" />
+        <item itemvalue="Application.HandlingIntegers" />
+        <item itemvalue="Application.CharCounter" />
         <item itemvalue="Application.rockpaperscissors.RockPaperScissorsMain" />
         <item itemvalue="Application.RockPaperScissorsMain" />
         <item itemvalue="Application.KnopTillKmh" />
-        <item itemvalue="Application.CharCounter" />
       </list>
     </recent_temporary>
   </component>
@@ -149,7 +149,10 @@
       <workItem from="1673790861412" duration="1211000" />
       <workItem from="1673886967479" duration="1206000" />
       <workItem from="1674296776100" duration="7796000" />
-      <workItem from="1674496905388" duration="1447000" />
+      <workItem from="1674496905388" duration="1767000" />
+      <workItem from="1674915071690" duration="1289000" />
+      <workItem from="1674998506087" duration="132000" />
+      <workItem from="1674998714553" duration="890000" />
     </task>
     <task id="LOCAL−00001" summary="wip">
       <created>1672690480773</created>
@@ -199,7 +202,13 @@
       <option name="presentableId" value="LOCAL−00008" />
       <updated>1674311596355</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL−00009" summary="wip">
+      <created>1674498483859</created>
+      <option name="number" value="LOCAL−00009" />
+      <option name="presentableId" value="LOCAL−00009" />
+      <updated>1674498483859</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,6 +225,17 @@
                   <entry key="Show.Git.Branches" value="true" />
                 </map>
               </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
             </State>
           </value>
         </entry>
@@ -228,26 +248,5 @@
     <MESSAGE value="Kommenterat kod" />
     <MESSAGE value="wip" />
     <option name="LAST_COMMIT_MESSAGE" value="wip" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/laboration3/Heltalshantering.java</url>
-          <line>109</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/laboration3/Heltalshantering.java</url>
-          <line>111</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/laboration3/Heltalshantering.java</url>
-          <line>115</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

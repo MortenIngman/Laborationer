@@ -29,8 +29,7 @@ public class CharCounter {
 
         for (int i = 0; i < sentence.length(); i++) {
             sentence = sentence.toLowerCase();
-            if (sentence.charAt(i) != ' ')
-                numberOfCharacters++;
+                numberOfCharacters = sentence.length();
         }
 
         while (character.length() != 1) {
